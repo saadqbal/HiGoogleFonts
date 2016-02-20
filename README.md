@@ -8,6 +8,34 @@ Usage
 To use the HiGoogleFonts library, just include the code below in your in your page before the body close tag. Check the index for a simple example:
 
 
+
+```javascript
+<script src="js/jquery.js"></script>
+    <script src="js/select2.full.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script src="js/fonts.js"></script>
+    <link rel="stylesheet" href="css/select2.css">
+     <link rel="stylesheet" href="css/fonts.css">
+    <script type="text/javascript">
+    $(document).ready(function() {
+     
+		$( "#select_fontfamily" ).higooglefonts({
+			selectId: "#select_fontfamily",
+			selectedCallback:function(e){
+				console.log(e);
+		    },
+			loadedCallback:function(e){
+				console.log(e);
+				$("p").css("font-family", e);
+		    }			
+		}); // Makes all the links green.
+
+      }); /// documentReady() ends here
+	  
+    </script>
+```
+
+
 Bug tracker
 -----------
 
