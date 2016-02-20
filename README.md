@@ -65,7 +65,7 @@ Events
 HiGoogleFonts provides an event system that developers can hook into. It gives you notifications of the font loading sequence.
 
   * `selectedCallback` - This event is triggered when a font is selected but not yet loaded.
-  * `loadedCallback` - This event is triggered when the font is loaded and is ready to be applied.
+  * `loadedCallback` - This event is triggered when the font is loaded and is ready to be applied. This is where you should apply font to an element.
  
   
 Bug tracker
