@@ -12,7 +12,7 @@
    
     
     <select id="select_fontfamily" style="width: 230px;"></select>
-	<p style="font-size: 20px;">This is the preview of the font selected</p>
+	<p id="paragraph" style="font-size: 20px;">This is the preview of the font selected</p>
 
    
     <script type="text/javascript">
@@ -22,13 +22,15 @@
 			selectedCallback:function(e){
 				console.log(e);
 		    },
-			loadedCallback:function(e){
-				console.log(e);
-				$("p").css("font-family", e);
+			loadedCallback:function(font){
+				console.log(font);
+				/*/////// This is where you should apply font.///////
+				/////////////////////////////////////////////////////*/				
+				$("#paragraph").css("font-family", font); // Change the font-family of the #paragraph
 		    }			
-		}); // Makes all the links green.
+		}); 
 
-      }); /// documentReady() ends here
+      });
 	  
     </script>
 </body>
