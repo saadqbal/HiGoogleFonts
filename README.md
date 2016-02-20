@@ -32,7 +32,7 @@ Include the required libraries. Add the folowing lines into your page header aft
 Step 3.
 ------
 
-Now use the code below to load all the fonts to the **<select id="select_fontfamily"></select>**:
+Now add the code below to the body to load all the fonts:
 
 
 ```javascript
