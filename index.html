@@ -1,6 +1,12 @@
 <html>
 <head>
-<title>HiGoogleFonts - Fast Font Picker with preview</title>
+ <title>HiGoogleFonts - Fast Font Picker with preview</title>
+ <script src="js/jquery.js"></script>
+ <script src="js/select2.full.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+ <script src="js/fonts.js"></script>
+ <link rel="stylesheet" href="css/select2.css">
+ <link rel="stylesheet" href="css/fonts.css">
 </head>
 <body>   
    
@@ -8,17 +14,11 @@
     <select id="select_fontfamily" style="width: 206px;"></select>
 	<p style="font-size: 20px;">This is the preview of the font selected</p>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/select2.full.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
-    <script src="js/fonts.js"></script>
-    <link rel="stylesheet" href="css/select2.css">
-     <link rel="stylesheet" href="css/fonts.css">
+   
     <script type="text/javascript">
     $(document).ready(function() {
      
-		$( "#select_fontfamily" ).higooglefonts({
-			selectId: "#select_fontfamily",
+		$( "#select_fontfamily" ).higooglefonts({			
 			selectedCallback:function(e){
 				console.log(e);
 		    },

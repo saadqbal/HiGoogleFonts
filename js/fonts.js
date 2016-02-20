@@ -2,7 +2,7 @@
  * jQuery HiGoogleFonts Library v0.1.0
  * http://asadiqbal.com/
  *
- * Uses select2.js for creating Picker
+ * Uses select2 jquery library for creating Picker
  *
  * Copyright Hiwaas and other contributors
  * Released under the Apache license 2.0
@@ -13,12 +13,11 @@
 
  
  (function ( $ ) {	
-		$.fn.higooglefonts = function(options, selectedCallback) {
+		$.fn.higooglefonts = function(options) {
 			
 			//console.log(this);
 			
-				var settings = $.extend({					
-					selectId: "#select_fontfamily",
+				var settings = $.extend({										
 					selectedCallback: function(params) { },
 					loadedCallback: function(params) { }  
 				}, options );
@@ -35,9 +34,7 @@
 					});
 					
 				});
-				
-				
-				
+			
 				var y=0;
 				this.select2({
 					placeholder:"Select Font Family",

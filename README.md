@@ -3,36 +3,59 @@ HiGoogleFonts allows you to add a Google font picker to easily display a list of
 
 
 Usage
------------
+======
 
-To use the HiGoogleFonts library, just include the code below in your in your page before the body close tag. Check the index for a simple example:
+To use the HiGoogleFonts library, just include the code below in your in your page in **_3 easy steps_**. Check the index for a simple example:
 
+Step 1.
+------
 
+Include the style sheets. Add the folowing lines into your page header:
+```javascript
+<link rel="stylesheet" href="css/select2.css">
+<link rel="stylesheet" href="css/fonts.css">
+```
 
+Step 2.
+------
+
+Include the required libraries. Add the folowing lines into your page header after style sheets:
 ```javascript
 <script src="js/jquery.js"></script>
-    <script src="js/select2.full.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
-    <script src="js/fonts.js"></script>
-    <link rel="stylesheet" href="css/select2.css">
-     <link rel="stylesheet" href="css/fonts.css">
-    <script type="text/javascript">
-    $(document).ready(function() {
-     
-		$( "#select_fontfamily" ).higooglefonts({
-			selectId: "#select_fontfamily",
-			selectedCallback:function(e){
-				console.log(e);
-		    },
-			loadedCallback:function(e){
-				console.log(e);
-				$("p").css("font-family", e);
-		    }			
-		}); // Makes all the links green.
+<script src="js/select2.full.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+<script src="js/fonts.js"></script>
+   
+```
 
-      }); /// documentReady() ends here
-	  
-    </script>
+
+Step 3.
+------
+
+Include the required libraries. Add the folowing lines into your page header after style sheets:
+
+```javascript
+
+<select id="select_fontfamily" style="width: 206px;"></select>
+<p style="font-size: 20px;">This is the preview of the font selected</p>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+ 
+	$( "#select_fontfamily" ).higooglefonts({			
+		selectedCallback:function(e){
+			console.log(e);
+		},
+		loadedCallback:function(e){
+			console.log(e);
+			$("p").css("font-family", e);
+		}			
+	}); // Makes all the links green.
+
+  }); 
+  
+</script>
 ```
 
 
