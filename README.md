@@ -52,7 +52,7 @@ $(document).ready(function() {
 			console.log(e);
 			$("p").css("font-family", e);
 		}			
-	}); // Makes all the links green.
+	});
 
   }); 
   
