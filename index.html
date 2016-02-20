@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>HiGoogleFonts - Fast Font Picker with preview</title>
+</head>
+<body>   
+    <script src="js/jquery.js"></script>
+    <script src="js/select2.full.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script src="js/fonts.js"></script>
+    <link rel="stylesheet" href="css/select2.css">
+     <link rel="stylesheet" href="css/fonts.css">
+    <script type="text/javascript">
+    $(document).ready(function() {
+     
+		$( "#select_fontfamily" ).higooglefonts({
+			selectId: "#select_fontfamily",
+			selectedCallback:function(e){
+				console.log(e);
+		    },
+			loadedCallback:function(e){
+				console.log(e);
+				$("p").css("font-family", e);
+		    }			
+		}); // Makes all the links green.
+
+      }); /// documentReady() ends here
+	  
+    </script>
+    
+    <select id="select_fontfamily" style="width: 206px;"></select>
+
+	<p style="font-size: 20px;">This is the preview of the font selected</p>
+
+
+</body>
+</html>
