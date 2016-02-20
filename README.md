@@ -36,7 +36,7 @@ Include the required libraries. Add the folowing lines into your page header aft
 
 ```javascript
 
-<select id="select_fontfamily" style="width: 206px;"></select>
+<select id="select_fontfamily"></select>
 <p style="font-size: 20px;">This is the preview of the font selected</p>
 
 
@@ -58,10 +58,17 @@ $(document).ready(function() {
 </script>
 ```
 
+Events
+======
 
+HiGoogleFonts provides an event system that developers can hook into. It gives you notifications of the font loading sequence.
+
+  * `selectedCallback` - This event is triggered when a font is selected but not yet loaded.
+  * `loadedCallback` - This event is triggered when the font is loaded and is ready to be applied.
+ 
+  
 Bug tracker
 -----------
-
 
 Have a bug? Please create an issue here on GitHub.
 

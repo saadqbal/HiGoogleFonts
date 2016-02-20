@@ -60,7 +60,7 @@
 					
 					if (typeof settings.selectedCallback == 'function') { // make sure the callback is a function
 						
-						settings.selectedCallback.call(this, e.params.data); // brings the scope to the callback
+						settings.selectedCallback.call(this, e.params.data.text); // brings the scope to the callback
 					}
 					
 					
