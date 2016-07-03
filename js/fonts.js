@@ -23,7 +23,7 @@
 				}, options );
 			
 				
-				fontMap   =   [];
+				var fontMap   =   fontMap || [];
 				
 				fonts.forEach(function(font,index){
 					
