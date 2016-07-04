@@ -14,7 +14,7 @@
   ],
   "license": "MIT",
   "homepage": "",
-  "private": false,
+  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
