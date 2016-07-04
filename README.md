@@ -73,7 +73,7 @@ $(document).ready(function() {
 ```
 
 
-npm and Bower 
+npm and bower 
 ==============
 
 **npm**
