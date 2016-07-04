@@ -1,6 +1,7 @@
 {
   "name": "HiGoogleFonts",
   "authors": [
+  	"asad.dsoft@gmail.com",
     "otis@webfox.co.nz"
   ],
   "description": "A google font picker built with jquery and select2",

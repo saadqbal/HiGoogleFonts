@@ -15,7 +15,10 @@
     "jquery",
     "select2"
   ],
-  "author": "otis@webfox.co.nz",
+ "contributors": [
+    {"email": "otis@webfox.co.nz"}    
+  ],
+  "author": "Asad Iqbal <asad.dsoft@gmail.com> (http://twitter.com/saadqbal)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/saadqbal/HiGoogleFonts/issues"
