@@ -1,0 +1,24 @@
+{
+  "name": "higooglefonts",
+  "version": "0.1.0",
+  "description": "A google fonts picker built with jquery and select2",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saadqbal/HiGoogleFonts.git"
+  },
+  "keywords": [
+    "fonts",
+    "google",
+    "jquery",
+    "select2"
+  ],
+  "author": "otis@webfox.co.nz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saadqbal/HiGoogleFonts/issues"
+  },
+  "homepage": "https://github.com/saadqbal/HiGoogleFonts#readme"
+}

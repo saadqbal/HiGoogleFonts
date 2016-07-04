@@ -8,10 +8,20 @@ HiGoogleFonts allows you to add a Google font picker to easily display a list of
 Usage
 ======
 
-To use the HiGoogleFonts library, just include the code below in your in your page in **_3 easy steps_**. Check the index for a simple example:
+To use the HiGoogleFonts library, just include the code below in your in your page in **_5 easy steps_**. Check the index for a simple example:
 
 Step 1.
 ------
+
+Clone Repo: `git clone https://github.com/saadqbal/HiGoogleFonts.git`
+
+Step 2.
+-------
+
+Install dependencies: `bower install`
+
+Step 3.
+-------
 
 Include the style sheets. Add the folowing lines into your page header:
 ```javascript
@@ -19,8 +29,8 @@ Include the style sheets. Add the folowing lines into your page header:
 <link rel="stylesheet" href="css/fonts.css">
 ```
 
-Step 2.
-------
+Step 4.
+-------
 
 Include the required libraries. Add the folowing lines into your page header after style sheets:
 ```javascript
@@ -32,8 +42,8 @@ Include the required libraries. Add the folowing lines into your page header aft
 ```
 
 
-Step 3.
-------
+Step 5.
+-------
 
 Now add the code below to the body to load all the fonts:
 
