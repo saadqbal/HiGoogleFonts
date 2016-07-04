@@ -72,6 +72,19 @@ $(document).ready(function() {
 </script>
 ```
 
+
+npm and Bower 
+==============
+
+**npm**
+
+  * `$ npm install higooglefonts`
+  
+**bower**  
+  * `bower install higooglefonts`
+ 
+
+
 Events
 ======
 
