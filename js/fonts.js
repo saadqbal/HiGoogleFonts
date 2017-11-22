@@ -83,8 +83,11 @@
 					});
 					
 				});
-			
-			
+		
+				// Set empty initial value
+				this.val('');
+				this.trigger('change');	
+
 			
 		  }; /// End of function
 		  
