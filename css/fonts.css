@@ -6,11 +6,12 @@
 	padding:1px !important;
 }
 .select2-results__options li div {
-	background: url("fontsList.gif") !important;
-	background-repeat: no-repeat;
-	overflow: hidden;
-	text-indent: -999px;
-	height: 29px;
+	/*background: url("/bower_components/HiGoogleFonts/css/fontsList.gif") !important;*/
+	/*background-repeat: no-repeat;*/
+	/*overflow: hidden;*/
+	/*text-indent: -999px;*/
+	/*height: 29px;*/
+	font-size: 18px;
 }
 #select2-select_fontfamily-container {
 	text-align: left !important;
