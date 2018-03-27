@@ -23,22 +23,21 @@ Install dependencies: `bower install`
 Step 3.
 -------
 
-Include the style sheets. Add the folowing lines into your page header:
+Include the style sheet. Add the following line into your page header:
 ```javascript
-<link rel="stylesheet" href="css/select2.css">
 <link rel="stylesheet" href="css/fonts.css">
 ```
 
 Step 4.
 -------
 
-Include the required libraries. Add the folowing lines into your page header after style sheets:
+Include the required libraries. Add the following lines into your page header after style sheets:
 ```javascript
-<script src="js/jquery.js"></script>
-<script src="js/select2.full.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.full.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 <script src="js/fonts.js"></script>
-   
+
 ```
 
 
@@ -56,7 +55,7 @@ Now add the code below to the body to load all the fonts:
 
 <script type="text/javascript">
 $(document).ready(function() {
- 
+
 	$( "#select_fontfamily" ).higooglefonts({			
 		selectedCallback:function(e){
 			console.log(e);
@@ -67,22 +66,22 @@ $(document).ready(function() {
 		}			
 	});
 
-  }); 
-  
+  });
+
 </script>
 ```
 
 
-npm and bower 
+npm and bower
 ==============
 
 **npm**
 
   * `$ npm install higooglefonts`
-  
+
 **bower**  
   * `bower install higooglefonts`
- 
+
 
 
 Events
@@ -92,8 +91,8 @@ HiGoogleFonts provides an event system that developers can hook into. It gives y
 
   * `selectedCallback` - This event is triggered when a font is selected but not yet loaded.
   * `loadedCallback` - This event is triggered when the font is loaded and is ready to be applied. This is where you should apply font to an element.
- 
-  
+
+
 Bug tracker
 -----------
 
